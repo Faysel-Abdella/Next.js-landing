@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "helveti";
+  src: url("/fonts/HelveticaNeue.ttf") format("truetype");
+}
+
+body {
+  font-family: "helveti", sans-serif;
+}
