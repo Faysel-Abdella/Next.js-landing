@@ -37,7 +37,7 @@ const page = () => {
         </div>
       </header>
 
-      <main className="mt-28">
+      <main className="mt-20">
         <div>
           <div className="flex justify-center items-center">
             <h3 className="w-fit relative text-7xl tracking-[1px]  leading-[76px] text-center font-bold din">
@@ -153,6 +153,19 @@ const page = () => {
           </div>
         </div>
       </main>
+
+      <footer className="p-10">
+        <div className="flex items-center gap-10">
+          <Image src={assets.pr1} alt="Partner one" />
+          <Image src={assets.pr2} alt="Partner two" />
+          <Image src={assets.pr3} alt="Partner three" />
+          <Image src={assets.pr4} alt="Partner four" />
+        </div>
+
+        <p className="mt-[32px]  font-medium leading-[25px] text-[16px] text-[#003119] opacity-[60%]">
+          Trusted by 35,000+ users to engage learners and ensuring
+        </p>
+      </footer>
     </section>
   );
 };
