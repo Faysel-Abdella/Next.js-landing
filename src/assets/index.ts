@@ -10,6 +10,10 @@ import pr2 from "./pr2.svg";
 import pr3 from "./pr3.svg";
 import pr4 from "./pr4.svg";
 
+import entertainment from "./entertainment.svg";
+import culture from "./culture.svg";
+import maths from "./maths.svg";
+
 export default {
   logo,
   star,
@@ -22,4 +26,8 @@ export default {
   pr2,
   pr3,
   pr4,
+
+  entertainment,
+  culture,
+  maths,
 };

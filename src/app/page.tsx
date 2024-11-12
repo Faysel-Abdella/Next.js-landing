@@ -12,7 +12,7 @@ import {
   Button,
 } from "@nextui-org/react";
 
-const page = () => {
+const LandingPage = () => {
   const [selectedKeys, setSelectedKeys] = React.useState(new Set(["Software"]));
 
   const selectedValue = React.useMemo(
@@ -84,27 +84,30 @@ const page = () => {
                 selectionMode="single"
                 selectedKeys={selectedKeys}
                 onSelectionChange={(keys) => {}}
+                classNames={{
+                  base: ["bg-[#003119] rounded-[10px]"],
+                }}
               >
                 <DropdownItem key="text">
                   <div className=" bg-opacity-[8%]  flex items-center gap-2">
-                    <Image src={assets.software} alt="Software" />
-                    <span className="font-semibold text-[#003119] text-base">
+                    <Image src={assets.entertainment} alt="Software" />
+                    <span className="font-semibold text-mainWhite opacity-[60%] text-base">
                       Entertainment
                     </span>
                   </div>
                 </DropdownItem>
                 <DropdownItem key="number">
                   <div className=" bg-opacity-[8%]  flex items-center gap-2">
-                    <Image src={assets.software} alt="Software" />
-                    <span className="font-semibold text-[#003119] text-base">
+                    <Image src={assets.culture} alt="Software" />
+                    <span className="font-semibold text-mainWhite opacity-[60%] text-base">
                       Culture
                     </span>
                   </div>
                 </DropdownItem>
                 <DropdownItem key="date">
                   <div className=" bg-opacity-[8%]  flex items-center gap-2">
-                    <Image src={assets.software} alt="Software" />
-                    <span className="font-semibold text-[#003119] text-base">
+                    <Image src={assets.maths} alt="Software" />
+                    <span className="font-semibold text-mainWhite opacity-[60%] text-base">
                       Mathematics
                     </span>
                   </div>
@@ -170,4 +173,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default LandingPage;
