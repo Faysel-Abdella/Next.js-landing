@@ -8,7 +8,15 @@
   font-family: "helveti";
   src: url("/fonts/HelveticaNeue.ttf") format("truetype");
 }
+@font-face {
+  font-family: "din";
+  src: url("/fonts/DINCondensedBold.ttf") format("truetype");
+}
 
 body {
   font-family: "helveti", sans-serif;
+}
+
+.din {
+  font-family: "din", sans-serif;
 }

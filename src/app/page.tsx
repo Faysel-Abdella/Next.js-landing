@@ -19,6 +19,21 @@ const page = () => {
           </div>
         </div>
       </header>
+
+      <main className="mt-28">
+        <div>
+          <h3 className="text-7xl tracking-[1px]  leading-[76px] text-center font-bold din">
+            TURN YOUR BORING E-LEARNING <br />
+            INTO AI LIVE INTERACTIVE EXPERIENCES
+          </h3>
+
+          <p className="mt-4 font-medium text-[20px] leading-[30px] text-center text-[#003119] opacity-[60%]">
+            Give your students the feeling of being on a 1-1 Zoom call with
+            their instructors, <br /> significantly improving engagement rates
+            and increasing your revenues.
+          </p>
+        </div>
+      </main>
     </section>
   );
 };
