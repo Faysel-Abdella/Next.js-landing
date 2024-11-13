@@ -120,11 +120,11 @@ const Choices = () => {
             className="bg-black text-white rounded-none border-2 border-[#003119]"
           >
             <DropdownItem key="100" className="bg-black text-white">
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <span className="font-semibold text-white opacity-[80%] text-base">
                   100
                 </span>
-              </div>
+              </div> */}
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
