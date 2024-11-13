@@ -98,36 +98,18 @@ const Choices = () => {
           for
         </p>
 
-        <Dropdown>
-          <DropdownTrigger>
-            <Button
-              variant="bordered"
-              className="bg-opacity-[8%] border border-[#003119] border-opacity-[10%] flex justify-center items-center gap-2 rounded-xl"
-            >
-              <Image src={assets.people} alt="People" />
-              <span className="font-semibold text-[#003119] text-base">
-                {selectedMemberCountValue}
-              </span>
-              <Image src={assets.more} alt="more" />
-            </Button>
-          </DropdownTrigger>
-          <DropdownMenu
-            aria-label="Member count selection"
-            variant="flat"
-            selectionMode="single"
-            selectedKeys={new Set<string>(selectedMemberCount)}
-            onSelectionChange={(keys) => {}}
-            className="bg-black text-white rounded-none border-2 border-[#003119]"
+        <div>
+          <Button
+            variant="bordered"
+            className="bg-opacity-[8%] border border-[#003119] border-opacity-[10%] flex justify-center items-center gap-2 rounded-xl"
           >
-            <DropdownItem key="100" className="bg-black text-white">
-              {/* <div className="flex items-center gap-2">
-                <span className="font-semibold text-white opacity-[80%] text-base">
-                  100
-                </span>
-              </div> */}
-            </DropdownItem>
-          </DropdownMenu>
-        </Dropdown>
+            <Image src={assets.people} alt="People" />
+            <span className="font-semibold text-[#003119] text-base">
+              {selectedMemberCountValue}
+            </span>
+            <Image src={assets.more} alt="more" />
+          </Button>
+        </div>
 
         <p className="font-medium text-base leading-[19.54px] text-[#003119] opacity-[60%]">
           members
