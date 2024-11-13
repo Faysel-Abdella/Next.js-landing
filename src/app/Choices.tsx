@@ -53,7 +53,7 @@ const Choices = () => {
             aria-label="Course selection"
             variant="flat"
             // selectionMode='multiple' // Enable multi-select
-            selectedKeys={selectedCourse}
+            selectedKeys={new Set<string>(selectedCourse)}
             onSelectionChange={(keys) => {}}
             classNames={{
               base: ["bg-[#003119] rounded-[10px]"],
@@ -115,8 +115,8 @@ const Choices = () => {
             aria-label="Member count selection"
             variant="flat"
             selectionMode="single"
-            selectedKeys={selectedMemberCount}
-            onSelectionChange={(keys) => setSelectedMemberCount(keys)}
+            selectedKeys={new Set<string>(selectedMemberCount)}
+            onSelectionChange={(keys) => {}}
             className="bg-black text-white rounded-none border-2 border-[#003119]"
           >
             <DropdownItem key="100" className="bg-black text-white">
